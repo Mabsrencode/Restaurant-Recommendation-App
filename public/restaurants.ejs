@@ -4,6 +4,18 @@
 <head>
     <%- include('includes/head')%>
     <link rel="stylesheet" href="styles/restaurants.css" />
+    <style>
+        .recommend-restaurant{
+    background-color: rgb(48, 42, 31);
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(218, 205, 183);
+    font-size: 1.25rem;
+    padding: 1rem;
+    box-sizing: border-box;
+        }
+    </style>
 </head>
 
 <body>
@@ -13,6 +25,7 @@
         <h1>Recommended restaurants</h1>
         <% if (numberOfRestaurants === 0) { %>
             <p>Unfortunately, we have no restaurants yet - maybe start recommending some?</p>
+            <a class="recommend-restaurant" href="/recommend">Share Your Favorite Restaurant</a>
         <% } else { %>
             <p>Find your next favorite restaurants with help of our other users!</p>
             <p>We found <%= numberOfRestaurants %> restaurants.</p>
@@ -35,7 +48,7 @@
                                 <%= restaurant.description %>
                             </p>
                             <div class="restaurant-actions">
-                                <a href="/restaurants/r1">View Restaurant</a>
+                                <a href="/restaurants/<%= restaurant.id %>">View Restaurant</a>
                             </div>
                         </article>
                     </li>
