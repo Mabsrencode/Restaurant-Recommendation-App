@@ -1,11 +1,12 @@
 {
   "name": "restaurant",
   "version": "1.0.0",
+  "main": "app.js",
   "description": "dynaminc tutorial",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
-    "start": "nodemon index.js"
+    "start": "node index.js"
   },
   "author": "reniel george mababa",
   "license": "MIT",
