@@ -1,7 +1,6 @@
 {
   "name": "restaurant",
   "version": "1.0.0",
-  "main": "app.js",
   "description": "dynaminc tutorial",
   "main": "index.js",
   "scripts": {
@@ -9,7 +8,7 @@
     "start": "node index.js"
   },
   "author": "reniel george mababa",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.9",
     "express": "^4.18.2",
